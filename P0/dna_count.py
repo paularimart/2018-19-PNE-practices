@@ -1,5 +1,5 @@
 print("This program calculates the total length of a DNA sequence and the number of bases that compound it")
-DNA_seq = "AGCATTTTATGCTACGATCGTACGTCTACGATGCTCGTCGTACGTACATGCTACGTACGATGTGGCATATTTATACGTACTACGTACAACCCGTAGCTACGTACG"
+DNA_seq = input("Introduce a DNA sequence: ")
 
 print("Total length:", len(DNA_seq))
 
