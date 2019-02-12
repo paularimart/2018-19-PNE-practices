@@ -1,0 +1,35 @@
+
+CLIENT-SERVER MODEL
+
+The client starts the communication with the server by means of a computer (mobile phone, tablet...). You can have two different programs
+working on the same computer.
+
+There isn't any wire or direct connection between the client and the server, because they are connected to a network, Internet, allowing
+both programs to communicate with each other.
+
+Inside Internet, there are many interconnected computers, and divided in groups called networks. to send a message from a client
+to a server, we need to identify both participants thanks to an IP address, which refers to the network interphase of the computers.
+ Client and server can be in different networks.
+
+My mobile phone IP address at URJC is: 10.0.54.64
+My mobile phone IP address at home is:
+
+The IP address of the computer in the lab is 212.128.253.105
+
+* ping time to 8.8.8.8: 3.53 ms
+* ping time to my computer: 0.052 ms
+* ping time to my partner's computer: 0.381 ms
+* ping time to my mobile phone: 323 ms
+
+commands used:
+    ifconfig
+    ping
+
+URL (Uniform Resource Locator) - for identifying a computer interphase for humans
+
+There are special servers in Internet (DNS) that translate the IP addresses to URL. A browser takes that IP address and connects to the
+machine.
+
+* Ping to Google: 216.58.211.228
+
+We need to specify the IP address and port number to connect to a serverTHIS IS A TEXT EXAMPLE FOR ADDING TO MY FILETHIS IS A TEXT EXAMPLE FOR ADDING TO MY FILETHIS IS A TEXT EXAMPLE FOR ADDING TO MY FILETHIS IS A TEXT EXAMPLE FOR ADDING TO MY FILE
