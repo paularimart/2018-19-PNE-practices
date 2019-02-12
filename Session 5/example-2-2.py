@@ -50,4 +50,3 @@ for s in list_seqs:
     else:
         per_G = 0
     print(" The percentage of Gs is: {}%".format(per_G))
-
