@@ -1,7 +1,7 @@
 import socket
 
 # Configure the Server's IP and PORT
-PORT = 8081
+PORT = 8083
 IP = "212.128.253.66"
 MAX_OPEN_REQUESTS = 5
 
