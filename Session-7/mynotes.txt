@@ -14,7 +14,7 @@ to a server, we need to identify both participants thanks to an IP address, whic
 My mobile phone IP address at URJC is: 10.0.54.64
 My mobile phone IP address at home is:
 
-The IP address of the computer in the lab is 212.128.253.105
+The IP address of the computer in the lab is 212.128.253.66
 
 * ping time to 8.8.8.8: 3.53 ms
 * ping time to my computer: 0.052 ms
