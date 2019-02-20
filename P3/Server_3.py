@@ -1,7 +1,7 @@
 import socket
 
-PORT = 8081
-IP = "212.128.253.67"
+PORT = 8087
+IP = "212.128.253.74"
 #Maximum number of clients that can connect to this server
 MAX_OPEN_REQUEST = 5
 
@@ -11,10 +11,14 @@ def check(s):
     else:
         for x in s:
             if x != "A" and x != "T" and x != "C" and x != "G":
-                print("ERROR")
+                seq = "bad"
                 break
             else:
-                print("OK")
+                seq = "good"
+        if seq == "bad":
+            print("ERROR")
+        else:
+            print("OK")
 
 def length(s):
     return len(s)
@@ -35,7 +39,6 @@ def process_client(cs):
         cs.send(str.encode(msg))
     else:
         check(msg)
-
 
     cs.close()
 
