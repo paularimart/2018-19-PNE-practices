@@ -1,4 +1,5 @@
 import socket
+import termcolor
 
 PORT = 8083
 IP = "212.128.253.74"
@@ -11,7 +12,7 @@ def process_client(cs):
     #Reading the message from the client
     msg = cs.recv(2048).decode("utf-8")
 
-    print("Message from the client: {}". format(msg))
+    termcolor.cprint(msg, 'magenta')
     # Sending the message back to the client
     cs.send(str.encode(msg))
 
@@ -27,18 +28,20 @@ serversocket.listen(MAX_OPEN_REQUEST)
 
 print("Socket ready: {}". format(serversocket))
 
-while True:
+print("Waiting for connections at: {}, {}". format(IP, PORT))
+(clientsocket, adress) = serversocket.accept()
 
-    print("Waiting for connections at: {}, {}". format(IP, PORT))
-    (clientsocket, adress) = serversocket.accept()
+#-- Process the client request
+print("Attending client: {}". format(adress))
 
-    #-- Process the client request
-    print("Attending client: {}". format(adress))
+#msg = clientsocket.recv(2048).decode("utf-8")
 
+if msg == "EXIT":
+    # -- Close the socket
+    clientsocket.close()
+else:
     process_client(clientsocket)
 
-    #-- Close the socket
-    clientsocket.close()
 
 
 

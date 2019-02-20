@@ -1,7 +1,7 @@
 import socket
 
-PORT = 8080
-IP = "212.128.253.67"
+PORT = 8085
+IP = "212.128.253.74"
 
 while True:
     # The client is blocking the server....  NOT A GOOD DESIGN!!!
