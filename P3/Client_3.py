@@ -5,7 +5,10 @@ IP = "212.128.253.74"
 
 while True:
     # The client is blocking the server....  NOT A GOOD DESIGN!!!
-    msg = input("> ")
+    msg = """AAACGTG 
+          len 
+          perc
+          """
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
