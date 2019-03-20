@@ -1,31 +1,30 @@
-{
-  "Person_1": [
-    {"Firstname": "Tyler"},
-    {"Lastname": "Joseph"},
-    {"Age": 30},
-    {"PhoneNumber": [
-    {"number":  "1111-1111", "type": "home"},
-    {"number":  "2222-2222", "type": "work"}
-  ]}
-  ],
+[
+  {
+    "Firstname": "Tyler",
+    "Lastname": "Joseph",
+    "Age": 30,
+    "PhoneNumber": [
+      {"number":  "1111-1111", "type": "home"},
+      {"number":  "2222-2222", "type": "work"}
+    ]},
+  {
+    "Firstname": "Joshua",
+    "Lastname": "Dun",
+    "Age": 30,
+    "PhoneNumber": [
+      {"number":  "3333-3333", "type": "home"},
+      {"number":  "4444-4444", "type": "work"}
+    ]},
+  {
+    "Firstname": "Debby",
+    "Lastname": "Ryan",
+    "Age": 25,
+    "PhoneNumber": [
+      {"number":  "5555-5555", "type": "home"},
+      {"number":  "6666-6666", "type": "work"}
+    ]}
+]
 
-  "Person_2": [
-    {"Firstname": "Joshua"},
-    {"Lastname": "Dun"},
-    {"Age": 30},
-    {"PhoneNumber": [
-    {"number":  "3333-3333", "type": "home"},
-    {"number":  "4444-4444", "type": "work"}
-  ]}
-  ],
 
-  "Person_3": [
-    {"Firstname": "Debby"},
-    {"Lastname": "Ryan"},
-    {"Age": 30},
-    {"PhoneNumber": [
-    {"number":  "5555-5555", "type": "home"},
-    {"number":  "6666-6666", "type": "work"}
-  ]}
-  ]
-}
+
+

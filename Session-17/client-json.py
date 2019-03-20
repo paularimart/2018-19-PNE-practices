@@ -38,73 +38,21 @@ print("CONTENT: ")
 
 # Print the information in the object
 print()
-termcolor.cprint("Name: ", 'cyan', end="")
-print(person['Firstname'], person['Lastname'])
 
-termcolor.cprint("Age: ", 'cyan', end="")
-print(person['Age'])
+print("Total people in the database: ", len(person))
 
-# Get the phoneNumber list
-phoneNumbers = person['PhoneNumber']
-
-# Print the number of elements int the list
-termcolor.cprint("Phone numbers: ", 'cyan', end='')
-print(len(phoneNumbers))
-
-# Print all the numbers
-for i, num in enumerate(phoneNumbers):
-    termcolor.cprint("  Phone {}:".format(i), 'blue')
-
-    # The element num contains 2 fields: number and type
-    termcolor.cprint("    Type: ", 'red', end='')
-    print(num['type'])
-    termcolor.cprint("    Number: ", 'red', end='')
-    print(num['number'])
-
-print()
-termcolor.cprint("Name: ", 'cyan', end="")
-print(person['Firstname_2'], person['Lastname_2'])
-
-termcolor.cprint("Age: ", 'cyan', end="")
-print(person['Age_2'])
-
-# Get the phoneNumber list
-phoneNumbers = person['PhoneNumber_2']
-
-# Print the number of elements int the list
-termcolor.cprint("Phone numbers: ", 'cyan', end='')
-print(len(phoneNumbers))
-
-# Print all the numbers
-for i, num in enumerate(phoneNumbers):
-    termcolor.cprint("  Phone {}:".format(i), 'blue')
-
-    # The element num contains 2 fields: number and type
-    termcolor.cprint("    Type: ", 'red', end='')
-    print(num['type'])
-    termcolor.cprint("    Number: ", 'red', end='')
-    print(num['number'])
-
-print()
-termcolor.cprint("Name: ", 'cyan', end="")
-print(person['Firstname_3'], person['Lastname_3'])
-
-termcolor.cprint("Age: ", 'cyan', end="")
-print(person['Age_3'])
-
-# Get the phoneNumber list
-phoneNumbers = person['PhoneNumber_3']
-
-# Print the number of elements int the list
-termcolor.cprint("Phone numbers: ", 'cyan', end='')
-print(len(phoneNumbers))
-
-# Print all the numbers
-for i, num in enumerate(phoneNumbers):
-    termcolor.cprint("  Phone {}:".format(i), 'blue')
-
-    # The element num contains 2 fields: number and type
-    termcolor.cprint("    Type: ", 'red', end='')
-    print(num['type'])
-    termcolor.cprint("    Number: ", 'red', end='')
-    print(num['number'])
+for object in person:
+    termcolor.cprint("Name: ", 'cyan', end='')
+    print(object['Firstname'], object['Lastname'])
+    termcolor.cprint("Age: ", 'cyan', end='')
+    print(object['Age'])
+    phoneNumbers = object['PhoneNumber']
+    termcolor.cprint("Phone numbers: ", 'cyan', end='')
+    print(len(phoneNumbers))
+    for i,num in enumerate(object['PhoneNumber']):
+        termcolor.cprint(" Phone number {}: ".format(i), 'yellow')
+        termcolor.cprint("  Type: ", 'blue', end='')
+        print(num['type'])
+        termcolor.cprint("  Number: ", 'blue', end='')
+        print(num['number'])
+    print()
