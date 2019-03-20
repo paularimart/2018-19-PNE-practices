@@ -34,10 +34,7 @@ print(data1)
 # -- form the JSON received
 person = json.loads(data1)
 
-print("CONTENT: ")
-
 # Print the information in the object
-print()
 
 print("Total people in the database: ", len(person))
 
