@@ -14,7 +14,7 @@ conn = http.client.HTTPSConnection(HOSTNAME)
 
 # -- Send the request. No body (None)
 # -- Use the defined headers
-conn.request(METHOD, ENDPOINT_SEARCH_WOEID + 'search/?query=' + request, None, headers)
+conn.request(METHOD, ENDPOINT_SEARCH_WOEID + '?query=' + request, None, headers)
 
 # -- Wait for the server's response
 r1 = conn.getresponse()
@@ -30,6 +30,45 @@ text_json = r1.read().decode("utf-8")
 conn.close()
 
 city = json.loads(text_json)
-woeid = city['woeid']
+list = city[0]
+woeid = list['woeid']
 
 print('The woeid is: {}'.format(woeid))
+
+conn.request(METHOD, ENDPOINT + str(woeid) + '/', None, headers)
+
+r2 = conn.getresponse()
+
+text_json = r2.read().decode("utf-8")
+conn.close()
+
+city = json.loads(text_json)
+current_time = city['time']
+
+print('The current time is: {}'.format(current_time))
+
+conn.request(METHOD, ENDPOINT + str(woeid) + '/', None, headers)
+
+r3 = conn.getresponse()
+
+text_json = r3.read().decode("utf-8")
+conn.close()
+
+city = json.loads(text_json)
+weather = city['consolidated_weather']
+list = weather[0]
+temperature = list['the_temp']
+
+print('The temperature is: {}'.format(temperature))
+
+conn.request(METHOD, ENDPOINT + str(woeid) + '/', None, headers)
+
+r2 = conn.getresponse()
+
+text_json = r2.read().decode("utf-8")
+conn.close()
+
+city = json.loads(text_json)
+sunset = city['sun_set']
+
+print('The sunset will be at: {}'.format(sunset))
