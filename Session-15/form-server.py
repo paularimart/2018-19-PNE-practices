@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import termcolor
 
-PORT = 8000
+PORT = 8009
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
 
@@ -25,7 +25,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
 
 # -- Main program
-with socketserver.TCPServer(("212.128.253.67", PORT), TestHandler) as httpd:
+with socketserver.TCPServer(("", PORT), TestHandler) as httpd:
     print("Serving at port: {}".format(PORT))
 
     try:
