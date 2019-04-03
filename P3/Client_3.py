@@ -1,10 +1,10 @@
 import socket
 
-PORT = 8081
-IP = "212.128.253.67"
+PORT = 8082
+IP = "212.128.253.70"
 
 # The client is blocking the server....  NOT A GOOD DESIGN!!!
-msg = "AAACGTG\nlen"
+msg = "AAACGTG\nlen\ncomplement\nreverse"
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
