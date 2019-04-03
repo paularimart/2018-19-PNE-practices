@@ -1,8 +1,9 @@
 import http.server
 import socketserver
 import termcolor
+from seqs import Seq
 
-PORT = 8007
+PORT = 8009
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
 
@@ -31,11 +32,10 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         self.wfile.write(str.encode(contents))
 
         termcolor.cprint('New requestline', 'red')
-        seq_1 = path_list[1].split('msg=')
-        print(seq_1)
-        seq_2 = seq_1[1].split('&')
-        print(seq_2)
-
+        list_1 = path_list[1].split('msg=')
+        print(list_1)
+        list_2 = list_1[1].split('&')
+        print(list_2)
 
 # -- Main program
 with socketserver.TCPServer(("", PORT), TestHandler) as httpd:
