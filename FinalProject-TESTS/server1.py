@@ -8,11 +8,19 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
     def do_GET(self):
 
-         #-- printing the request line
          termcolor.cprint(self.requestline, 'green')
 
-         f = open("Form2.html", 'r')
-         contents = f.read()
+         print(self.path)
+         path_list = self.path.split('?')
+         print(path_list)
+         resource = path_list[0]
+         #resource_2 = resource.split['&']
+         if resource == '/':
+            f = open("form1.html", 'r')
+            contents = f.read()
+         else:
+             file = open("error1.html", "r")
+             contents = file.read()
 
          self.send_response(200)
 
@@ -20,11 +28,9 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
          self.send_header('Content-Length', len(str.encode(contents)))
          self.end_headers()
 
-         #--Sending the body of the response message
          self.wfile.write(str.encode(contents))
 
 
-# -- Main program
 with socketserver.TCPServer(("", PORT), TestHandler) as httpd:
     print("Serving at port: {}".format(PORT))
 
