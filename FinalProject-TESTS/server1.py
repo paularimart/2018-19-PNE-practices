@@ -53,9 +53,11 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
                 species = json.loads(text_json)
 
+                list_species = ''
                 for x in species['species']:
                     list = x['name']
                     print(list)
+                    list_species = list_species + '<li>{}</li>'.format(list)
                     contents = """<!DOCTYPE html>
                                      <html lang="en">
                                        <head>
@@ -64,10 +66,10 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                                        </head>
                                        <body style="background-color: #7cc3f3;">
                                          <h1>List of species</h1>
-                                         <p>{}<p>
+                                         <l>{}</l>
                                          <a href="/">HOME PAGE</a>
                                        </body>
-                                     </html>""".format(list)
+                                     </html>""".format(list_species)
 
         else:
             file = open("error1.html", "r")
