@@ -4,7 +4,7 @@ import termcolor
 import http.client
 import json
 
-PORT = 8006
+PORT = 8005
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
 
@@ -20,6 +20,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         if resource == '/':
             f = open("form1.html", 'r')
             contents = f.read()
+
         elif resource == '/myserver':
             print(self.path)
             resource_2 = self.path.split('?')
@@ -56,17 +57,18 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                     list = x['name']
                     print(list)
                     contents = """<!DOCTYPE html>
-                             <html lang="en">
-                               <head>
-                                 <meta charset="utf-8">
-                                 <title>List Species</title>
-                               </head>
-                               <body style="background-color: #7cc3f3;">
-                                 <h1>List of species</h1>
-                                 <p>{}<p>
-                                 <a href="/">HOME PAGE</a>
-                               </body>
-                             </html>""".format(list)
+                                     <html lang="en">
+                                       <head>
+                                         <meta charset="utf-8">
+                                         <title>List Species</title>
+                                       </head>
+                                       <body style="background-color: #7cc3f3;">
+                                         <h1>List of species</h1>
+                                         <p>{}<p>
+                                         <a href="/">HOME PAGE</a>
+                                       </body>
+                                     </html>""".format(list)
+
         else:
             file = open("error1.html", "r")
             contents = file.read()
