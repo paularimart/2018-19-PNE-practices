@@ -1,6 +1,5 @@
 import http.server
 import socketserver
-import termcolor
 import http.client
 import json
 
@@ -10,7 +9,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
     def do_GET(self):
 
-        termcolor.cprint(self.requestline, 'green')
+        print(self.requestline)
 
         print(self.path)
         path_list = self.path.split('?')
