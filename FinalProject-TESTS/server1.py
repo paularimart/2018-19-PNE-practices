@@ -36,7 +36,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
                 headers = {'User-Agent': 'http-client'}
 
-                conn = http.client.HTTPSConnection(HOSTNAME)
+                conn = http.client.HTTPConnection(HOSTNAME)
 
                 conn.request(METHOD, ENDPOINT_LIST_SPECIES, None, headers)
 
@@ -69,6 +69,47 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                                          <a href="/">HOME PAGE</a>
                                        </body>
                                      </html>""".format(list_species)
+
+            elif param_list[1] == 'karyotype=on':
+                HOSTNAME = 'rest.ensembl.org'
+                ENDPOINT_KARYOTYPE_1 = '/info/assembly/'
+                ENDPOINT_KARYOTYPE_2 = '?content-type=application/json'
+                specie_k = param_list[2].split('=')
+                animal = specie_k[1]
+                print(animal)
+                METHOD = "GET"
+
+                headers = {'User-Agent': 'http-client'}
+
+                conn = http.client.HTTPConnection(HOSTNAME)
+
+                conn.request(METHOD, ENDPOINT_KARYOTYPE_1 + animal + ENDPOINT_KARYOTYPE_2, None, headers)
+
+                r2 = conn.getresponse()
+
+                text_json = r2.read().decode("utf-8")
+                conn.close()
+
+                karyotype = json.loads(text_json)
+
+                chromosomes = ''
+                for x in karyotype['karyotype']:
+                    name = x
+                    print(name)
+                    chromosomes = chromosomes + '<li>{}</li>'.format(name)
+                    contents = """<!DOCTYPE html>
+                                     <html lang="en">
+                                       <head>
+                                         <meta charset="utf-8">
+                                         <title>List Species</title>
+                                       </head>
+                                       <body style="background-color: #7cc3f3;">
+                                         <h1>Karyotype</h1>
+                                         <l>{}</l>
+                                         <a href="/">HOME PAGE</a>
+                                       </body>
+                                     </html>""".format(chromosomes)
+
 
         else:
             file = open("error1.html", "r")
