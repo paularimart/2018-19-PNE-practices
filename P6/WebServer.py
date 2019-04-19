@@ -1,6 +1,5 @@
 import http.server
 import socketserver
-import termcolor
 from seqs import Seq
 
 PORT = 8009
@@ -16,11 +15,44 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         if resource == '/':
             file = open("MainPage.html", "r")
             contents = file.read()
+
+        elif resource == '/form':
+            print(self.path)
+            parameters = path_list[1]
+            print(parameters)
+            functions = parameters.split('&')
+            print(functions)
+            #seq = functions[0].split('=')
+            #bases = ["A", "C", "G", "T"]
+            #for x in seq:
+                #if x != bases:
+                    #file = open("Error.html", "r")
+                    #contents = file.read()
+
+            if functions[1] == 'chk=on':
+                seq = functions[0].split('=')
+                length = len(seq[1])
+                print(length)
+                contents = """<!DOCTYPE html>
+                                 <html lang="en">
+                                   <head>
+                                     <meta charset="utf-8">
+                                     <title>Response</title>
+                                   </head>
+                                   <body style="background-color: #f8c471;">
+                                     <h1>Response</h1>
+                                     Length:
+                                     <l>{}</l>
+                                     <br><br>
+                                     <a href="/">HOME PAGE</a>
+                                   </body>
+                                 </html>""".format(length)
+
         else:
             file = open("Error.html", "r")
             contents = file.read()
 
-        termcolor.cprint(self.requestline, 'green')
+        #print(self.requestline)
 
         self.send_response(200)
 
@@ -30,12 +62,6 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
         # --Sending the body of the response message
         self.wfile.write(str.encode(contents))
-
-        termcolor.cprint('New requestline', 'red')
-        list_1 = path_list[1].split('msg=')
-        print(list_1)
-        list_2 = list_1[1].split('&')
-        print(list_2)
 
 # -- Main program
 with socketserver.TCPServer(("", PORT), TestHandler) as httpd:
