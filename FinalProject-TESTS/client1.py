@@ -65,17 +65,10 @@ conn.close()
 
 chromosomes = json.loads(text_json)
 
-number = len(chromosomes['karyotype'])
-print(number)
-
 for x in chromosomes['karyotype']:
     step1 = chromosomes['top_level_region']
-    step2 = step1[x]
-    step3 = step2['length']
-    print(x, step2)
-
-
-
-
-
-
+    for y in step1:
+        step2 = y['name']
+        if step2 == x:
+            step3 = y['length']
+            print(x, step3)

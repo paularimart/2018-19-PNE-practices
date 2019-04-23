@@ -5,15 +5,34 @@
     <title>MAIN</title>
   </head>
   <body style="background-color: #7cc3f3;">
-    <h3>Choose an option: </h3>
-    <form action="myserver" method="get">
-      List of species:
-      <input type="checkbox" name="list_species">
+    <h3>CHOOSE AN OPTION </h3>
+
+    <h3>List of species </h3>
+    <form action="listSpecies" method="get">
+    Print all the species on the list
+    <br><br>
+        <input type="submit"/>
+    </form>
+
+    <h3>List of species </h3>
+    <form action="listSpecies" method="get">
       Limit:  <input type="text" name="limit">
       <br><br>
-      Karyotype:
-      <input type="checkbox" name="karyotype">
+        <input type="submit"/>
+    </form>
+
+    <h3>Karyotype </h3>
+    <form action="karyotype" method="get">
       Specie:  <input type="text" name="specie_k">
+      <br><br>
+        <input type="submit"/>
+    </form>
+
+    <h3>Chromosome length </h3>
+    <form action="chromosomeLength" method="get">
+      Specie:  <input type="text" name="specie_k">
+      <br><br>
+      Chromosome:  <input type="text" name="specie_k">
       <br><br>
         <input type="submit"/>
     </form>

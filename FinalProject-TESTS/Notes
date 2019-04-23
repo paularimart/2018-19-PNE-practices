@@ -2,3 +2,7 @@ server1.py, line 39 - He cambiado de HTTPSConnection a HTTPConnection ya que en 
                       ¿Lo cambio tra vez en clase? Comprobar si funciona en los ordenadores del lab
 
 especies probadas: equus_caballus , homo_sapiens (for the karyotype)
+
+PARÁMETROS LIMIT Y CHROMOSOME
+
+
