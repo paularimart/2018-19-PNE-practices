@@ -3,7 +3,7 @@ import socketserver
 import http.client
 import json
 
-PORT = 8007
+PORT = 8000
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
 

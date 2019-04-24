@@ -2,6 +2,7 @@ server1.py, line 39 - He cambiado de HTTPSConnection a HTTPConnection ya que en 
                       ¿Lo cambio tra vez en clase? Comprobar si funciona en los ordenadores del lab
 
 especies probadas: equus_caballus , homo_sapiens (for the karyotype)
+probar las de los ejemplos de endpoints de la wiki
 
 PARÁMETROS LIMIT Y CHROMOSOME (17)
 
@@ -15,4 +16,12 @@ PARÁMETROS LIMIT Y CHROMOSOME (17)
 
 ATENCION IMPORTANTE: PORT 8000
 
+CROSS REFERENCES
+GET xrefs/symbol/:species/:symbol
+http://rest.ensembl.org/xrefs/symbol/homo_sapiens/FRAT1?content-type=application/json
 
+SEQUENCE
+GET sequence/id/:id
+http://rest.ensembl.org/sequence/id/ENSG00000165879?content-type=application/json
+
+para copiar el html - view page source (fuentes)
