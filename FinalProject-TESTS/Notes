@@ -3,6 +3,16 @@ server1.py, line 39 - He cambiado de HTTPSConnection a HTTPConnection ya que en 
 
 especies probadas: equus_caballus , homo_sapiens (for the karyotype)
 
-PARÁMETROS LIMIT Y CHROMOSOME
+PARÁMETROS LIMIT Y CHROMOSOME (17)
+
+            #print(self.path)
+            #resource_2 = self.path.split('?')
+            #print(resource_2)
+            #options = resource_2[1]
+            #print(options)
+            #param_list = options.split('&')
+            #print(param_list)
+
+ATENCION IMPORTANTE: PORT 8000
 
 
