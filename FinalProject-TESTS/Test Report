@@ -1,0 +1,142 @@
+TEST REPORT - Paula Arias Martínez
+
+BASIC level ------------------------------------------------------------------------------------------------------------
+
+/listSpecies
+
+- Without limit (http://localhost:8000/listSpecies?)
+
+<!DOCTYPE html>
+                                                 <html lang="en">
+                                                   <head>
+                                                     <meta charset="utf-8">
+                                                     <title>List Species</title>
+                                                   </head>
+                                                   <body style="background-color: #7cc3f3;">
+                                                     <h1>List of species</h1>
+                                                     <l><li>ficedula_albicollis</li><li>castor_canadensis</li><li>ciona_intestinalis</li><li>pogona_vitticeps</li><li>manacus_vitellinus</li><li>mus_spicilegus</li><li>zonotrichia_albicollis</li><li>dipodomys_ordii</li><li>nomascus_leucogenys</li><li>mus_musculus_fvbnj</li><li>fundulus_heteroclitus</li><li>mus_spretus</li><li>poecilia_reticulata</li><li>amphiprion_ocellaris</li><li>meriones_unguiculatus</li><li>saccharomyces_cerevisiae</li><li>paramormyrops_kingsleyae</li><li>jaculus_jaculus</li><li>mus_musculus_c3hhej</li><li>amphiprion_percula</li><li>erinaceus_europaeus</li><li>phascolarctos_cinereus</li><li>acanthochromis_polyacanthus</li><li>lepidothrix_coronata</li><li>neovison_vison</li><li>cavia_porcellus</li><li>equus_caballus</li><li>dasypus_novemcinctus</li><li>haplochromis_burtoni</li><li>macaca_fascicularis</li><li>coturnix_japonica</li><li>melopsittacus_undulatus</li><li>heterocephalus_glaber_male</li><li>aotus_nancymaae</li><li>ursus_maritimus</li><li>prolemur_simus</li><li>poecilia_latipinna</li><li>kryptolebias_marmoratus</li><li>apteryx_haastii</li><li>salvator_merianae</li><li>propithecus_coquereli</li><li>equus_asinus_asinus</li><li>cavia_aperea</li><li>anas_platyrhynchos_platyrhynchos</li><li>danio_rerio</li><li>peromyscus_maniculatus_bairdii</li><li>serinus_canaria</li><li>mesocricetus_auratus</li><li>ictalurus_punctatus</li><li>gambusia_affinis</li><li>monopterus_albus</li><li>lonchura_striata_domestica</li><li>felis_catus</li><li>ornithorhynchus_anatinus</li><li>apteryx_owenii</li><li>sphenodon_punctatus</li><li>poecilia_mexicana</li><li>drosophila_melanogaster</li><li>sarcophilus_harrisii</li><li>maylandia_zebra</li><li>mus_musculus_wsbeij</li><li>labrus_bergylta</li><li>parus_major</li><li>numida_meleagris</li><li>petromyzon_marinus</li><li>lepisosteus_oculatus</li><li>xiphophorus_couchianus</li><li>nannospalax_galili</li><li>ochotona_princeps</li><li>choloepus_hoffmanni</li><li>pan_troglodytes</li><li>saimiri_boliviensis_boliviensis</li><li>mustela_putorius_furo</li><li>gopherus_agassizii</li><li>urocitellus_parryii</li><li>mus_musculus_pwkphj</li><li>oryzias_latipes</li><li>pteropus_vampyrus</li><li>chelonoidis_abingdonii</li><li>rhinopithecus_bieti</li><li>astyanax_mexicanus</li><li>neolamprologus_brichardi</li><li>mus_musculus_casteij</li><li>echinops_telfairi</li><li>taeniopygia_guttata</li><li>loxodonta_africana</li><li>cebus_capucinus</li><li>anolis_carolinensis</li><li>ailuropoda_melanoleuca</li><li>spermophilus_dauricus</li><li>sus_scrofa</li><li>mus_musculus</li><li>mus_musculus_nzohlltj</li><li>calidris_pygmaea</li><li>notamacropus_eugenii</li><li>hippocampus_comes</li><li>bos_taurus</li><li>bison_bison_bison</li><li>mus_musculus_aj</li><li>oryzias_latipes_hsok</li><li>pan_paniscus</li><li>gorilla_gorilla</li><li>dromaius_novaehollandiae</li><li>apteryx_rowi</li><li>canis_familiaris</li><li>nothoprocta_perdicaria</li><li>cyprinodon_variegatus</li><li>cricetulus_griseus_picr</li><li>vicugna_pacos</li><li>cyanistes_caeruleus</li><li>mastacembelus_armatus</li><li>macaca_nemestrina</li><li>mus_caroli</li><li>colobus_angolensis_palliatus</li><li>ovis_aries</li><li>mandrillus_leucophaeus</li><li>astatotilapia_calliptera</li><li>oryzias_latipes_hni</li><li>gadus_morhua</li><li>eptatretus_burgeri</li><li>carlito_syrichta</li><li>oryzias_melastigma</li><li>cercocebus_atys</li><li>gasterosteus_aculeatus</li><li>poecilia_formosa</li><li>mus_musculus_dba2j</li><li>mus_musculus_c57bl6nj</li><li>junco_hyemalis</li><li>cricetulus_griseus_chok1gshd</li><li>xenopus_tropicalis</li><li>canis_lupus_dingo</li><li>tursiops_truncatus</li><li>piliocolobus_tephrosceles</li><li>pygocentrus_nattereri</li><li>microcebus_murinus</li><li>amphilophus_citrinellus</li><li>caenorhabditis_elegans</li><li>tetraodon_nigroviridis</li><li>pundamilia_nyererei</li><li>xiphophorus_maculatus</li><li>mus_pahari</li><li>cricetulus_griseus_crigri</li><li>chinchilla_lanigera</li><li>procavia_capensis</li><li>mus_musculus_balbcj</li><li>heterocephalus_glaber_female</li><li>calidris_pugnax</li><li>chlorocebus_sabaeus</li><li>capra_hircus</li><li>otolemur_garnettii</li><li>latimeria_chalumnae</li><li>anser_brachyrhynchus</li><li>macaca_mulatta</li><li>callithrix_jacchus</li><li>scophthalmus_maximus</li><li>periophthalmus_magnuspinnatus</li><li>pelodiscus_sinensis</li><li>panthera_pardus</li><li>octodon_degus</li><li>anabas_testudineus</li><li>cynoglossus_semilaevis</li><li>notechis_scutatus</li><li>mus_musculus_cbaj</li><li>oreochromis_niloticus</li><li>theropithecus_gelada</li><li>microtus_ochrogaster</li><li>takifugu_rubripes</li><li>crocodylus_porosus</li><li>oryctolagus_cuniculus</li><li>bos_mutus</li><li>vulpes_vulpes</li><li>stegastes_partitus</li><li>sorex_araneus</li><li>mus_musculus_akrj</li><li>seriola_dumerili</li><li>gallus_gallus</li><li>mus_musculus_nodshiltj</li><li>chrysemys_picta_bellii</li><li>papio_anubis</li><li>marmota_marmota_marmota</li><li>pongo_abelii</li><li>scleropages_formosus</li><li>ictidomys_tridecemlineatus</li><li>ciona_savignyi</li><li>rhinopithecus_roxellana</li><li>esox_lucius</li><li>meleagris_gallopavo</li><li>mus_musculus_lpj</li><li>fukomys_damarensis</li><li>panthera_tigris_altaica</li><li>seriola_lalandi_dorsalis</li><li>mola_mola</li><li>ursus_americanus</li><li>tupaia_belangeri</li><li>monodelphis_domestica</li><li>rattus_norvegicus</li><li>mus_musculus_129s1svimj</li><li>homo_sapiens</li><li>myotis_lucifugus</li></l>
+                                                     <br><br>
+                                                     <a href="/">HOME PAGE</a>
+                                                   </body>
+                                                 </html>
+
+- With limit = 26 (http://localhost:8000/listSpecies?limit=26)
+
+<!DOCTYPE html>
+                                         <html lang="en">
+                                           <head>
+                                             <meta charset="utf-8">
+                                             <title>List Species</title>
+                                           </head>
+                                           <body style="background-color: #7cc3f3;">
+                                             <h1>List of species</h1>
+                                             <l><li>mus_musculus</li><li>homo_sapiens</li><li>cavia_porcellus</li><li>mus_musculus_cbaj</li><li>amphilophus_citrinellus</li><li>anolis_carolinensis</li><li>cebus_capucinus</li><li>labrus_bergylta</li><li>panthera_pardus</li><li>takifugu_rubripes</li><li>rhinopithecus_bieti</li><li>mastacembelus_armatus</li><li>lepidothrix_coronata</li><li>fukomys_damarensis</li><li>monodelphis_domestica</li><li>equus_asinus_asinus</li><li>xiphophorus_maculatus</li><li>apteryx_owenii</li><li>calidris_pugnax</li><li>gasterosteus_aculeatus</li><li>cricetulus_griseus_picr</li><li>mus_spicilegus</li><li>oryzias_melastigma</li><li>nannospalax_galili</li><li>chelonoidis_abingdonii</li><li>acanthochromis_polyacanthus</li></l>
+                                             <br><br>
+                                             <a href="/">HOME PAGE</a>
+                                           </body>
+                                         </html>
+
+/karyotype (http://localhost:8000/karyotype?specie=equus_caballus)
+- specie = equus_caballus
+
+<!DOCTYPE html>
+                                 <html lang="en">
+                                   <head>
+                                     <meta charset="utf-8">
+                                     <title>Karyotype</title>
+                                   </head>
+                                   <body style="background-color: #7cc3f3;">
+                                     <h1>Karyotype</h1>
+                                     <l><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>X</li></l>
+                                     <br><br>
+                                     <a href="/">HOME PAGE</a>
+                                   </body>
+                                 </html>
+
+/chromosomeLength (http://localhost:8000/chromosomeLength?specie=equus_caballus&chromo=11)
+- specie = equus_caballus
+- chromo = 11
+
+<!DOCTYPE html>
+                                         <html lang="en">
+                                           <head>
+                                             <meta charset="utf-8">
+                                             <title>Chromosome length</title>
+                                           </head>
+                                           <body style="background-color: #7cc3f3;">
+                                             <h1>Chromosome length</h1>
+                                             <l>11: 61676917</l>
+                                             <br><br>
+                                             <a href="/">HOME PAGE</a>
+                                           </body>
+                                         </html>
+
+/ (http://localhost:8000/)
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MAIN</title>
+  </head>
+  <body style="background-color: #7cc3f3;">
+    <h3>CHOOSE AN OPTION </h3>
+
+    <h3>List of species </h3>
+    <form action="listSpecies" method="get">
+    Print all the species on the list
+    <br><br>
+        <input type="submit"/>
+    </form>
+
+    <h3>List of species </h3>
+    <form action="listSpecies" method="get">
+      Limit:  <input type="text" name="limit">
+      <br><br>
+        <input type="submit"/>
+    </form>
+
+    <h3>Karyotype </h3>
+    <form action="karyotype" method="get">
+      Specie:  <input type="text" name="specie">
+      <br><br>
+        <input type="submit"/>
+    </form>
+
+    <h3>Chromosome length </h3>
+    <form action="chromosomeLength" method="get">
+      Specie:  <input type="text" name="specie">
+      <br><br>
+      Chromosome:  <input type="text" name="chromo">
+      <br><br>
+        <input type="submit"/>
+    </form>
+
+    <h3>Human gene sequence </h3>
+    <form action="geneSeq" method="get">
+      Gene:  <input type="text" name="gene">
+      <br><br>
+        <input type="submit"/>
+    </form>
+
+  </body>
+</html>
+
+MEDIUM LEVEL -----------------------------------------------------------------------------------------------------------
+
+/geneSeq (http://localhost:8000/geneSeq?gene=FRAT1)
+- gene = FRAT1
+
+<!DOCTYPE html>
+                             <html lang="en">
+                               <head>
+                                 <meta charset="utf-8">
+                                 <title>Gene seq</title>
+                               </head>
+                               <body style="background-color: #7cc3f3;">
+                                 <h1>Gene Sequence</h1>
+                                 <l>FRAT1: ATTCCGGCTCCCGCGGCTGCAGGCGCGCGGCTAGAGTGCCTGGCGGGCTCCGGCTTCCGCGTCCGCCCCGGCCCCGGTCCAGACTTAGTCTTCAGCTCCGCGCCCGCTCCGCCGCGGCCCACCGCGCCCGCCGGCAGCCGAGCCCCCAGCGACGCCCGCACAGCTCCGGGTGCCCAGACAGGGGGCCATGCCGTGCCGGAGGGAGGAGGAAGAGGAAGCCGGCGAGGAGGCGGAGGGGGAGGAAGAGGAGGAGGACAGCTTCCTCCTACTGCAGCAGTCAGTGGCGCTGGGCAGCTCGGGCGAGGTGGACCGGCTGGTGGCCCAGATCGGCGAGACGCTGCAGCTGGACGCGGCGCAGCACAGCCCGGCCTCGCCGTGCGGGCCCCCGGGGGCGCCGCTGCGGGCCCCGGGGCCCCTGGCTGCGGCGGTGCCGGCGGACAAGGCCAGGTCCCCGGCGGTGCCGCTGCTGCTGCCGCCCGCGTTGGCGGAGACTGTGGGCCCGGCGCCCCCTGGGGTCCTGCGCTGCGCCCTGGGGGACCGCGGCCGCGTGCGGGGCCGCGCTGCGCCCTACTGCGTGGCCGAGCTCGCCACAGGCCCCAGCGCGCTGTCCCCACTGCCCCCTCAGGCCGACCTTGATGGGCCTCCGGGAGCTGGCAAGCAGGGCATCCCGCAGCCGCTGTCGGGTCCGTGCCGGCGAGGATGGCTCCGGGGCGCCGCCGCCTCCCGCCGCCTGCAGCAGCGACGCGGGTCCCAACCAGAAACCCGCACAGGCGACGACGACCCGCACCGGCTTCTGCAGCAGCTAGTGCTCTCTGGAAACCTCATCAAGGAGGCCGTGCGAAGGCTTCATTCGCGACGGCTGCAGTTACGTGCAAAGCTTCCCCAACGCCCGCTCCTGGGACCTCTGTCGGCCCCGGTGCATGAACCCCCTTCGCCTCGCAGCCCTCGCGCGGCCTGCAGTGACCCTGGCGCCTCCGGGAGGGCGCAGCTCAGAACTGGCGACGGCGTTCTTGTGCCTGGCAGCTAACACGCCCGGGGTGGCCACAGCGCCAGCCTCAGACTGGAGGGCAAGGGGTTCCCTTGAGGGCTGCAGTTCTACTCAGGCTGGTGGAGAACTCTGGCTTTTGGAAGCGAGAGTAAAAAGCTAATGACGAGGAACCGAAAAATCGCGAGTGTTTCGCGGGTAACTGGGGTTGAGGGCCAAAATATTTGGAATGAAGGACTTTGGCCCTATTTAAGGCAGATTTTACAGAGCGCACCTCAAACGTACAAGTCAGTAGGACTCCTTATTTGGCGTGACCCGACCTGGCCGCGGAGCCTGCATTTCCTCGCAGCCTCTCAGTGCCCTCCAGCCCCGCGACCATGTGGCCACAATCCACGCTTCTCCGGATCGCGGTGCGCCGGAACCACGGAGGATGATGCCAGTTACTTGCTTTACCTTTTCAGGGCTGGCTCCTGATCCACTTTGGGGGAGGAGAACATGAGTAGATAATTTCAGGGTGCAGCCCAATCTGCCAGACTTAAAAAAACCATCTTGTGTCTTTGGAGGTGCTGCTTAATACCAAACATGCGGTGCCATGAAGGGACCCTTTGGGGGTTGAATAGGAGTTAACCCCTGCGCTCTCTTTGCAACTGTCTCTCTTCTCAGAGTGGTGGGGGAAGGCTGTACGACACGGGTGGGGAAAGGAGGTGGGGGCGGGGAGTATTGAATGGTGGTGGAAGGGTAGAGAGGCGCGGAGTGAACCCCACGCCCTGTCTAAAGTGTATTTTCAGAGCCGGCCCGCCTCTCCTCGGTTCAAGGTCACTGTTTCCTGGGCACGCACTGGGTTGCGGGACAGAGTAGCCAGGTTCTGCCGGTGCTCGGAGAAGAGCGCAGTGTTTTGCAAGTGCTGGAGTCTCCTGAGGACACGCGCGTCGCCGCCACCGCGGGTGTGGGAAAGCGCGGACGTGCTGGGCGGCTGTGCTTCGGTAGGCGACCACCGCCCCTGGCCGCGCTCCGGGCTTTCACGGAAACTCCCGAGACCGGGCCCTGGGTTCCTCCTCTCCTACTCGGCTCTGCAGTCCTACTCAAGCGGGTGGCTCTGGGATCCTGGGGGCCTGGGTTGGGGGCTAGGGAGACGCCATGTGATGGACACTCCAGGGACACACAGCCTAGCACAGCAGCTTATAATGGGCTCTCCGGGGCCATTTGCAATAACAGCTGCAATTCCCTGGATAGACGAGTTGATTTCCTCCCTCTGCCCCTCCCCCAGCCATGCCAGCTGGCCTTTGTAAGTGCAGGAAACCGAGTAGAAAATGTGACCCTCCAAATGGAGAAGCTGCAGGCTTTGCCATTGTGAACCATGGTGAAGTGCTTGGAACATACTGTTCACTCACTCTAAAGGCGCTGAGACTGTGCTGTTGTTCTCGTTTTTATAGTCAATGGCTTGTTCATCATCCAGATGTGGCTACTGACATATCTACACTTCGCACCGGAGTGTCTGGAATTGTGGCTATCCTGATTATAGGATTTTAACTTAACTGAAATGCCTGCTTTGAATAAATGTGTTGGGTTTTTTGTTTGGTTTTATTTTATACTTGCCATCAGTGAAAAAGATGTACAGAACACATTTCTCTGATCTCCATAAACATGAAAACACTTGAAATCTC</l>
+                                 <br><br>
+                                 <a href="/">HOME PAGE</a>
+                               </body>
+                             </html>
