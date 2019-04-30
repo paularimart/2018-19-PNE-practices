@@ -11,24 +11,28 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         path_list = self.path.split('?')
         print(path_list)
         resource = path_list[0]
-        if resource == '/':
+
+        if (len(path_list) == 1) and (resource == '/seq' or resource == '/'):
             file = open("MainPage.html", "r")
             contents = file.read()
 
-        elif resource == '/form':
+        elif len(path_list) > 1 and (resource == '/seq'):
             print(self.path)
             parameters = path_list[1]
             print(parameters)
             functions = parameters.split('&')
             print(functions)
-            #seq = functions[0].split('=')
-            #bases = ["A", "C", "G", "T"]
-            #for x in seq:
-                #if x != bases:
-                    #file = open("Error.html", "r")
-                    #contents = file.read()
+            seq = functions[0].split('=')
+            bases = ["A", "C", "G", "T"]
+            for x in seq[1]:
+                if x != bases:
+                    seq = False
 
-            if ((functions[1] == 'base=A') or (functions[1] == 'base=T') or (functions[1] == 'base=C') or (functions[1] == 'base=G')) and (functions[2] == 'operation=count'):
+            if seq == False:
+                file = open("error2.html", "r")
+                contents = file.read()
+
+            elif ((functions[1] == 'base=A') or (functions[1] == 'base=T') or (functions[1] == 'base=C') or (functions[1] == 'base=G')) and (functions[2] == 'operation=count'):
                 seq = functions[0].split('=')
                 if functions[1] == 'base=A':
                     seq = functions[0].split('=')
