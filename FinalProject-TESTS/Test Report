@@ -4,7 +4,7 @@ BASIC level --------------------------------------------------------------------
 
 /listSpecies
 
-- Without limit (http://localhost:8000/listSpecies?)
+- Without limit (http://localhost:8000/listSpecies)
 
 <!DOCTYPE html>
                                                  <html lang="en">
