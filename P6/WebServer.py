@@ -2,7 +2,6 @@ import http.server
 import socketserver
 from seqs import Seq
 
-
 PORT = 8009
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
