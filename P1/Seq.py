@@ -76,6 +76,7 @@ class Seq:
             per_T = 0
 
         if seq_len > 0:
+
             per_C = round(100.0 * result_C / seq_len, 1)
         else:
             per_C = 0
