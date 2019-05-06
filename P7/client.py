@@ -8,7 +8,7 @@ PARAMETER = '?content-type=application/json'
 
 headers = {'User-Agent': 'http-client'}
 
-conn = http.client.HTTPSConnection(HOSTNAME)
+conn = http.client.HTTPConnection(HOSTNAME)
 
 conn.request(METHOD, ENDPOINT + PARAMETER, None, headers)
 
