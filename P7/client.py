@@ -1,6 +1,7 @@
 import http.client
 import json
 
+
 HOSTNAME = 'rest.ensembl.org'
 ENDPOINT = '/sequence/id/ENSG00000165879'
 METHOD = "GET"
